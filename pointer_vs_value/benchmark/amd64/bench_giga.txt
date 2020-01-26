@@ -1,0 +1,7 @@
+goos: darwin
+goarch: amd64
+pkg: go-bench/pointer_vs_value/pointer_receiver
+BenchmarkGiga_Calc-16    	    46147950	        29.9 ns/op
+BenchmarkGigaP_Calc-16    	57532897	        19.2 ns/op
+BenchmarkGigaIfc_Calc-16    	10571948	        98.9 ns/op
+PASS

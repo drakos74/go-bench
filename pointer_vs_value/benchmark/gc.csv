@@ -1,0 +1,13 @@
+duration,method,time passed,invocations,num GC,Sum(pause_duration)
+10,TestTeraValueReceiverRoutine ,10001,2723703,580,6522
+100, TestTeraValueReceiverRoutine,100001,26778210,5742,7476
+10,TestTeraPointerReceiverRoutine,10001,2835459,1188,7308
+100,TestTeraPointerReceiverRoutine,100000,27850534,11740,7503
+10,TestTeraInterfaceReceiverRoutine ,10000,2604248,2362,8249
+100,TestTeraInterfaceReceiverRoutine,100000,25550879,23350,8994
+10,TestTeraValueReceiverNative ,10001,3743902,3160,5113
+100,TestTeraValueReceiverNative,100003,36977557,31244,4501
+10,TestTeraPointerReceiverNative ,10004,3598679,3926,5011
+100,TestTeraPointerReceiverNative,100001,37961302,39329,4794
+10,TestTeraInterfaceReceiverNative ,10000,3466605,5470,4542
+100,TestTeraInterfaceReceiverNative,100003,34582412,54729,4625

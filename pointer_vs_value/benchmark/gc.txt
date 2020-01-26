@@ -1,0 +1,102 @@
+# 10 * Seconds
+GOROOT=/usr/local/go #gosetup
+GOPATH=/Users/vangeliskatikaridis/go #gosetup
+/usr/local/go/bin/go test -c -o /private/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/___go_test_go_bench_pointer_vs_value_pointer_receiver go-bench/pointer_vs_value/pointer_receiver #gosetup
+/usr/local/go/bin/go tool test2json -t /private/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/___go_test_go_bench_pointer_vs_value_pointer_receiver -test.v #gosetup
+=== RUN   TestTeraValueReceiverRoutine
+Time passed [10001]19 <nil>
+invocations = 2723703
+
+TestTeraValueArgument , 580 , 6522 , [] , 15.62597ms
+
+--- PASS: TestTeraValueReceiverRoutine (10.00s)
+=== RUN   TestTeraPointerReceiverRoutine
+Time passed [10001]19 <nil>
+invocations = 2835459
+
+TestTeraValueArgument , 1188 , 7308 , [] , 33.011615ms
+
+--- PASS: TestTeraPointerReceiverRoutine (10.00s)
+=== RUN   TestTeraInterfaceReceiverRoutine
+Time passed [10000]19 <nil>
+invocations = 2604248
+
+TestTeraValueArgument , 2362 , 8249 , [] , 71.559808ms
+
+--- PASS: TestTeraInterfaceReceiverRoutine (10.00s)
+=== RUN   TestTeraValueReceiverNative
+Time passed [10001]19 <nil>
+invocations = 3743902
+
+TestTeraValueArgument , 3160 , 5113 , [] , 87.580981ms
+
+--- PASS: TestTeraValueReceiverNative (10.00s)
+=== RUN   TestTeraPointerReceiverNative
+Time passed [10004]19 <nil>
+invocations = 3598679
+
+TestTeraValueArgument , 3926 , 5011 , [] , 103.581529ms
+
+--- PASS: TestTeraPointerReceiverNative (10.01s)
+=== RUN   TestTeraInterfaceReceiverNative
+Time passed [10000]19 <nil>
+invocations = 3466605
+
+TestTeraValueArgument , 5470 , 4542 , [] , 132.557011ms
+
+--- PASS: TestTeraInterfaceReceiverNative (10.00s)
+PASS
+
+Process finished with exit code 0
+
+# 100 * Seconds
+GOROOT=/usr/local/go #gosetup
+GOPATH=/Users/vangeliskatikaridis/go #gosetup
+/usr/local/go/bin/go test -c -o /private/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/___go_test_go_bench_pointer_vs_value_pointer_receiver go-bench/pointer_vs_value/pointer_receiver #gosetup
+/usr/local/go/bin/go tool test2json -t /private/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/___go_test_go_bench_pointer_vs_value_pointer_receiver -test.v #gosetup
+=== RUN   TestTeraValueReceiverRoutine
+Time passed [100001]20 <nil>
+invocations = 26778210
+
+TestTeraValueReceiverRoutine , 5742 , 7476 , [] , 167.462736ms
+
+--- PASS: TestTeraValueReceiverRoutine (100.00s)
+=== RUN   TestTeraPointerReceiverRoutine
+Time passed [100000]20 <nil>
+invocations = 27850534
+
+TestTeraPointerReceiverRoutine , 11740 , 7503 , [] , 346.014755ms
+
+--- PASS: TestTeraPointerReceiverRoutine (100.00s)
+=== RUN   TestTeraInterfaceReceiverRoutine
+Time passed [100000]20 <nil>
+invocations = 25550879
+
+TestTeraInterfaceReceiverRoutine , 23350 , 8994 , [] , 743.284541ms
+
+--- PASS: TestTeraInterfaceReceiverRoutine (100.00s)
+=== RUN   TestTeraValueReceiverNative
+Time passed [100003]20 <nil>
+invocations = 36977557
+
+TestTeraValueReceiverNative , 31244 , 4501 , [] , 895.190913ms
+
+--- PASS: TestTeraValueReceiverNative (100.00s)
+=== RUN   TestTeraPointerReceiverNative
+Time passed [100001]20 <nil>
+invocations = 37961302
+
+TestTeraPointerReceiverNative , 39329 , 4794 , [] , 1.044946781s
+
+--- PASS: TestTeraPointerReceiverNative (100.00s)
+=== RUN   TestTeraInterfaceReceiverNative
+Time passed [100003]20 <nil>
+invocations = 34582412
+
+TestTeraInterfaceReceiverNative , 54729 , 4625 , [] , 1.33818181s
+
+--- PASS: TestTeraInterfaceReceiverNative (100.00s)
+PASS
+
+Process finished with exit code 0
+

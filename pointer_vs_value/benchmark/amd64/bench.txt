@@ -1,0 +1,217 @@
+➜  go-bench go test ./... -run=XXX -bench=. -benchmem
+?       go-bench/cmd    [no test files]
+?       go-bench/dgraph [no test files]
+goos: darwin
+goarch: amd64
+pkg: go-bench/pointer_vs_value/code
+BenchmarkBig_Calc-16  ,            341530078      ,          3.90 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkBigP_Calc-16  ,           669078213      ,          1.85 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkBigIfc_Calc-16   ,        170004778      ,          6.84 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkCompBig_Calc-16    ,      214974638      ,          4.83 ns/op    ,        1 B/op    ,     0 allocs/op
+BenchmarkCompBigP_Calc-16   ,      362813984      ,          2.99 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkCompBigIfc_Calc-16  ,     100040602      ,         10.0 ns/op     ,        2 B/op    ,     0 allocs/op
+Benchmark_Calc-16     ,            743500370      ,          1.56 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkP_Calc-16     ,           901515927      ,          1.25 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkIfc_Calc-16      ,        167694588      ,          7.79 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkComp_Calc-16    ,         312053124      ,          3.53 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkCompP_Calc-16     ,       766391637      ,          1.44 ns/op    ,        0 B/op    ,     0 allocs/op
+BenchmarkCompIfc_Calc-16    ,      113434885      ,          9.55 ns/op    ,        2 B/op    ,     0 allocs/op
+BenchmarkSmall_Calc-16       ,     1000000000     ,          0.751 ns/op   ,        0 B/op    ,     0 allocs/op
+BenchmarkSmallP_Calc-16        ,  766138716       ,         1.51 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkSmallIfc_Calc-16      ,  165721966       ,         7.75 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkCompSmall_Calc-16     ,  638082822       ,         2.02 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkCompSmallP_Calc-16    ,  1000000000      ,         1.01 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkCompSmallIfc_Calc-16  ,  170629609       ,         7.01 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMicro_Calc-16         ,  1000000000      ,         1.02 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMicroP_Calc-16        ,  664089534       ,         1.53 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMicroIfc_Calc-16      ,  150719006       ,         7.77 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkTiny_Calc-16          ,  872283936       ,         1.28 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkTinyP_Calc-16         ,  1000000000      ,         1.03 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkTinyIfc_Calc-16       ,  152320791       ,         7.33 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMini_Calc-16          ,  348360777       ,         3.52 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMiniP_Calc-16         ,  881380615       ,         1.28 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMiniIfc_Calc-16       ,  159620230       ,         7.58 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMega_Calc-16          ,  156290907       ,         7.54 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMegaP_Calc-16         ,  777933379       ,         1.51 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkMegaIfc_Calc-16       ,  158557274       ,         7.12 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkTera_Calc-16          ,  77776372        ,        14.8 ns/op      ,       0 B/op     ,    0 allocs/op
+BenchmarkTeraP_Calc-16         ,  678546289       ,         1.74 ns/op     ,       0 B/op     ,    0 allocs/op
+BenchmarkTeraIfc_Calc-16       ,  166455222       ,         7.14 ns/op     ,       0 B/op     ,    0 allocs/op
+PASS
+ok      go-bench/pointer_vs_value/code      79.646s
+PASS
+ok      go-bench/use    0.007s
+
+# iterations = 100,000
+➜  go-bench go test ./... -run=XXX -bench=. -benchmem
+?       go-bench/cmd    [no test files]
+?       go-bench/dgraph [no test files]
+goos: darwin
+goarch: amd64
+pkg: go-bench/pointer_vs_value/code
+BenchmarkBig_Iter-16             ,     3159      ,      339510 ns/op      ,       83 B/op     ,    0 allocs/op
+BenchmarkBigP_Iter-16            ,     5348      ,      218195 ns/op      ,       49 B/op     ,    0 allocs/op
+BenchmarkBigIfc_Iter-16          ,     1636      ,      715005 ns/op      ,      160 B/op     ,    1 allocs/op
+Benchmark_Iter-16                ,     5485      ,      220993 ns/op      ,       48 B/op     ,    0 allocs/op
+BenchmarkP_Iter-16               ,     5451      ,      219217 ns/op      ,       48 B/op     ,    0 allocs/op
+BenchmarkIfc_Iter-16             ,     1688      ,      730882 ns/op      ,      156 B/op     ,    1 allocs/op
+BenchmarkSmall_Iter-16           ,     5358      ,      224151 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkSmallP_Iter-16          ,     5389      ,      219447 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkSmallIfc_Iter-16        ,     1738      ,      697381 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMicro_Iter-16           ,     5685      ,      223700 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMicroP_Iter-16          ,     5452      ,      216331 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMicroIfc_Iter-16        ,     1657      ,      733839 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkTiny_Iter-16            ,     5373      ,      219334 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkTinyP_Iter-16           ,     5523      ,      216990 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkTinyIfc_Iter-16         ,     1723      ,      723065 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMini_Iter-16            ,     3783      ,      317990 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMiniP_Iter-16           ,     5409      ,      216026 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMiniIfc_Iter-16         ,     1626      ,      745324 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMega_Iter-16            ,     1672      ,      716211 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMegaP_Iter-16           ,     5646      ,      218192 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkMegaIfc_Iter-16         ,     1585      ,      727205 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkTera_Iter-16            ,      807      ,     1446417 ns/op      ,        1 B/op     ,    0 allocs/op
+BenchmarkTeraP_Iter-16           ,     4857      ,      225575 ns/op      ,        0 B/op     ,    0 allocs/op
+BenchmarkTeraIfc_Iter-16         ,     1317      ,      896441 ns/op      ,        1 B/op     ,    0 allocs/op
+PASS
+ok      go-bench/pointer_vs_value/code      29.734s
+PASS
+ok      go-bench/use    0.005s
+
+# iterations = 100,000,000
+➜  go-bench go test ./... -run=XXX -bench=. -benchmem
+?       go-bench/cmd    [no test files]
+?       go-bench/dgraph [no test files]
+goos: darwin
+goarch: amd64
+pkg: go-bench/pointer_vs_value/code
+BenchmarkBig_Iter-16                ,     3    ,    342178667 ns/op     ,     87925 B/op    ,   681 allocs/op
+BenchmarkBigP_Iter-16               ,     5    ,    222347509 ns/op     ,     52864 B/op    ,   409 allocs/op
+BenchmarkBigIfc_Iter-16             ,     2    ,    738392892 ns/op     ,    132336 B/op    ,  1024 allocs/op
+Benchmark_Iter-16                   ,     5    ,    219138379 ns/op     ,     52867 B/op    ,   409 allocs/op
+BenchmarkP_Iter-16                  ,     5    ,    247000027 ns/op     ,     52918 B/op    ,   409 allocs/op
+BenchmarkIfc_Iter-16                ,     2    ,    747451577 ns/op     ,    131896 B/op    ,  1022 allocs/op
+BenchmarkSmall_Iter-16              ,     4    ,    261133906 ns/op     ,         0 B/op    ,     0 allocs/op
+BenchmarkSmallP_Iter-16             ,     5    ,    242761859 ns/op     ,         0 B/op    ,     0 allocs/op
+BenchmarkSmallIfc_Iter-16           ,     2    ,    716332814 ns/op     ,         8 B/op    ,     0 allocs/op
+BenchmarkMicro_Iter-16              ,     5    ,    226672844 ns/op     ,         0 B/op    ,     0 allocs/op
+BenchmarkMicroP_Iter-16             ,     5    ,    221413166 ns/op     ,         0 B/op    ,     0 allocs/op
+BenchmarkMicroIfc_Iter-16           ,     2    ,    735483942 ns/op     ,         8 B/op    ,     0 allocs/op
+BenchmarkTiny_Iter-16               ,     5    ,    227079453 ns/op     ,         6 B/op    ,     0 allocs/op
+BenchmarkTinyP_Iter-16              ,     5    ,    218180127 ns/op     ,         6 B/op    ,     0 allocs/op
+BenchmarkTinyIfc_Iter-16            ,     2    ,    716009788 ns/op     ,        32 B/op    ,     1 allocs/op
+BenchmarkMini_Iter-16               ,     4    ,    321884980 ns/op     ,        24 B/op    ,     0 allocs/op
+BenchmarkMiniP_Iter-16              ,     5    ,    225551391 ns/op     ,        19 B/op    ,     0 allocs/op
+BenchmarkMiniIfc_Iter-16            ,     2    ,    742584249 ns/op     ,        96 B/op    ,     2 allocs/op
+BenchmarkMega_Iter-16               ,     2    ,    730591469 ns/op     ,       176 B/op    ,     5 allocs/op
+BenchmarkMegaP_Iter-16              ,     5    ,    228671188 ns/op     ,        70 B/op    ,     2 allocs/op
+BenchmarkMegaIfc_Iter-16            ,     2    ,    746655411 ns/op     ,       352 B/op    ,     6 allocs/op
+BenchmarkTera_Iter-16               ,     1    ,   1861554405 ns/op     ,       832 B/op    ,    26 allocs/op
+BenchmarkTeraP_Iter-16              ,     5    ,    225349375 ns/op     ,       166 B/op    ,     5 allocs/op
+BenchmarkTeraIfc_Iter-16            ,     2    ,    928304228 ns/op     ,       864 B/op    ,    13 allocs/op
+PASS
+ok      go-bench/pointer_vs_value/code      55.965s
+PASS
+ok      go-bench/use    0.010s
+➜  go-bench
+
+
+➜  go-bench go test ./... -run=XXX -bench=. -benchmem
+?       go-bench/cmd    [no test files]
+?       go-bench/dgraph [no test files]
+
+goos: darwin
+goarch: amd64
+pkg: go-bench/pointer_vs_value/code
+BenchmarkBig_Iter-16       , 3   ,     366642478 ns/op     ,     92376 B/op   ,    688 allocs/op
+BenchmarkBigP_Iter-16      , 5   ,     223867694 ns/op     ,     55227 B/op   ,    412 allocs/op
+BenchmarkBigIfc_Iter-16    , 2   ,     720214300 ns/op     ,    139252 B/op   ,   1034 allocs/op
+Benchmark_Iter-16          , 5   ,     227971028 ns/op     ,     55576 B/op   ,    413 allocs/op
+BenchmarkP_Iter-16         , 5   ,     222341890 ns/op     ,     55454 B/op   ,    412 allocs/op
+BenchmarkIfc_Iter-16       , 2   ,     730806294 ns/op     ,    139820 B/op   ,   1036 allocs/op
+BenchmarkSmall_Iter-16     , 5   ,     226317049 ns/op     ,      2766 B/op   ,      4 allocs/op
+BenchmarkSmallP_Iter-16    , 5   ,     230967998 ns/op     ,      2766 B/op   ,      4 allocs/op
+BenchmarkSmallIfc_Iter-16  , 2   ,     719787857 ns/op     ,      6924 B/op   ,     11 allocs/op
+BenchmarkMicro_Iter-16     , 5   ,     227229928 ns/op     ,      2785 B/op   ,      4 allocs/op
+BenchmarkMicroP_Iter-16    , 5   ,     225016268 ns/op     ,      2766 B/op   ,      4 allocs/op
+BenchmarkMicroIfc_Iter-16  , 2   ,     750132050 ns/op     ,      6924 B/op   ,     11 allocs/op
+BenchmarkTiny_Iter-16      , 5   ,     229483602 ns/op     ,      2788 B/op   ,      4 allocs/op
+BenchmarkTinyP_Iter-16     , 5   ,     227209502 ns/op     ,      2772 B/op   ,      4 allocs/op
+BenchmarkTinyIfc_Iter-16   , 2   ,     748413700 ns/op     ,      6940 B/op   ,     11 allocs/op
+BenchmarkMini_Iter-16      , 4   ,     330963643 ns/op     ,      3482 B/op   ,      6 allocs/op
+BenchmarkMiniP_Iter-16     , 5   ,     226034553 ns/op     ,      2785 B/op   ,      4 allocs/op
+BenchmarkMiniIfc_Iter-16   , 2   ,     749787263 ns/op     ,      7012 B/op   ,     12 allocs/op
+BenchmarkMega_Iter-16      , 2   ,     736462629 ns/op     ,      7092 B/op   ,     16 allocs/op
+BenchmarkMegaP_Iter-16     , 5   ,     228192449 ns/op     ,      2836 B/op   ,      6 allocs/op
+BenchmarkMegaIfc_Iter-16   , 2   ,     737266100 ns/op     ,      7268 B/op   ,     16 allocs/op
+BenchmarkTera_Iter-16      , 1   ,    2057833286 ns/op     ,     14648 B/op   ,     47 allocs/op
+BenchmarkTeraP_Iter-16     , 5   ,     227621865 ns/op     ,      2932 B/op   ,      9 allocs/op
+BenchmarkTeraIfc_Iter-16   , 2   ,    1993507100 ns/op     ,      7780 B/op   ,     24 allocs/op
+PASS
+ok      go-bench/pointer_vs_value/code      58.502s
+PASS
+ok      go-bench/use    0.005s
+
+BenchmarkBig_Iter , 3 , 3 , [8.946µs 17.333µs 18.786µs] , [] , 45.065µs
+BenchmarkBig_Iter , 5 , 2 , [8.753µs 44.217µs] , [] , 98.035µs
+BenchmarkBig_Iter , 7 , 2 , [8.265µs 12.813µs] , [] , 119.113µs
+BenchmarkBigP_Iter , 9 , 2 , [6.949µs 5.057µs] , [] , 131.119µs
+BenchmarkBigP_Iter , 11 , 2 , [7.222µs 10.106µs] , [] , 148.447µs
+BenchmarkBigP_Iter , 13 , 2 , [7.94µs 18.535µs] , [] , 174.922µs
+BenchmarkBigIfc_Iter , 15 , 2 , [33.875µs 10.597µs] , [] , 219.394µs
+BenchmarkBigIfc_Iter , 17 , 2 , [8.403µs 39.913µs] , [] , 267.71µs
+Benchmark_Iter , 19 , 2 , [7.039µs 11.233µs] , [] , 285.982µs
+Benchmark_Iter , 21 , 2 , [7.263µs 12.185µs] , [] , 305.43µs
+Benchmark_Iter , 23 , 2 , [7.556µs 10.069µs] , [] , 323.055µs
+BenchmarkP_Iter , 25 , 2 , [9.217µs 49.644µs] , [] , 381.916µs
+BenchmarkP_Iter , 27 , 2 , [8.337µs 14.311µs] , [] , 404.564µs
+BenchmarkP_Iter , 29 , 2 , [7.502µs 10.569µs] , [] , 422.635µs
+BenchmarkIfc_Iter , 31 , 2 , [7.799µs 12.573µs] , [] , 443.007µs
+BenchmarkIfc_Iter , 33 , 2 , [7.686µs 16.764µs] , [] , 467.457µs
+BenchmarkSmall_Iter , 35 , 2 , [7.487µs 17.023µs] , [] , 491.967µs
+BenchmarkSmall_Iter , 37 , 2 , [6.678µs 50.507µs] , [] , 549.152µs
+BenchmarkSmall_Iter , 39 , 2 , [7.513µs 11.194µs] , [] , 567.859µs
+BenchmarkSmallP_Iter , 41 , 2 , [6.889µs 4.674µs] , [] , 579.422µs
+BenchmarkSmallP_Iter , 43 , 2 , [7.875µs 9.597µs] , [] , 596.894µs
+BenchmarkSmallP_Iter , 45 , 2 , [8.005µs 10.572µs] , [] , 615.471µs
+BenchmarkSmallIfc_Iter , 47 , 2 , [7.353µs 34.161µs] , [] , 656.985µs
+BenchmarkSmallIfc_Iter , 49 , 2 , [7.091µs 11.429µs] , [] , 675.505µs
+BenchmarkMicro_Iter , 51 , 2 , [7.475µs 15.539µs] , [] , 698.519µs
+BenchmarkMicro_Iter , 53 , 2 , [7.363µs 10.196µs] , [] , 716.078µs
+BenchmarkMicro_Iter , 55 , 2 , [23.648µs 10.459µs] , [] , 750.185µs
+BenchmarkMicroP_Iter , 57 , 2 , [7.374µs 13.189µs] , [] , 770.748µs
+BenchmarkMicroP_Iter , 59 , 2 , [8.395µs 13.172µs] , [] , 792.315µs
+BenchmarkMicroP_Iter , 61 , 2 , [8.403µs 35.771µs] , [] , 836.489µs
+BenchmarkMicroIfc_Iter , 63 , 2 , [7.671µs 32.703µs] , [] , 876.863µs
+BenchmarkMicroIfc_Iter , 65 , 2 , [8.051µs 40.084µs] , [] , 924.998µs
+BenchmarkTiny_Iter , 67 , 2 , [9.617µs 11.313µs] , [] , 945.928µs
+BenchmarkTiny_Iter , 69 , 2 , [6.944µs 28.516µs] , [] , 981.388µs
+BenchmarkTiny_Iter , 71 , 2 , [8.425µs 9.958µs] , [] , 999.771µs
+BenchmarkTinyP_Iter , 73 , 2 , [8.828µs 12.076µs] , [] , 1.020675ms
+BenchmarkTinyP_Iter , 75 , 2 , [6.843µs 55.509µs] , [] , 1.083027ms
+BenchmarkTinyP_Iter , 77 , 2 , [8.598µs 11.015µs] , [] , 1.10264ms
+BenchmarkTinyIfc_Iter , 79 , 2 , [7.745µs 37.904µs] , [] , 1.148289ms
+BenchmarkTinyIfc_Iter , 81 , 2 , [7.548µs 79.22µs] , [] , 1.235057ms
+BenchmarkMini_Iter , 83 , 2 , [9.996µs 10.324µs] , [] , 1.255377ms
+BenchmarkMini_Iter , 85 , 2 , [8.129µs 5.023µs] , [] , 1.268529ms
+BenchmarkMini_Iter , 87 , 2 , [6.91µs 42.524µs] , [] , 1.317963ms
+BenchmarkMini_Iter , 89 , 2 , [7.808µs 21.291µs] , [] , 1.347062ms
+BenchmarkMiniP_Iter , 91 , 2 , [8.743µs 10.908µs] , [] , 1.366713ms
+BenchmarkMiniP_Iter , 93 , 2 , [8.478µs 10.5µs] , [] , 1.385691ms
+BenchmarkMiniP_Iter , 95 , 2 , [7.005µs 11.69µs] , [] , 1.404386ms
+BenchmarkMiniP_Iter , 97 , 2 , [6.781µs 15.042µs] , [] , 1.426209ms
+BenchmarkMiniIfc_Iter , 99 , 2 , [7.99µs 28.671µs] , [] , 1.46287ms
+BenchmarkMiniIfc_Iter , 101 , 2 , [7.523µs 50.911µs] , [] , 1.521304ms
+BenchmarkMega_Iter , 103 , 2 , [6.879µs 12.077µs] , [] , 1.54026ms
+BenchmarkMega_Iter , 105 , 2 , [6.984µs 40.247µs] , [] , 1.587491ms
+BenchmarkMegaP_Iter , 107 , 2 , [7.081µs 10.949µs] , [] , 1.605521ms
+BenchmarkMegaP_Iter , 109 , 2 , [8.059µs 62.618µs] , [] , 1.676198ms
+BenchmarkMegaP_Iter , 111 , 2 , [7.239µs 32.499µs] , [] , 1.715936ms
+BenchmarkMegaIfc_Iter , 113 , 2 , [7.743µs 14.892µs] , [] , 1.738571ms
+BenchmarkMegaIfc_Iter , 115 , 2 , [7.464µs 13.963µs] , [] , 1.759998ms
+BenchmarkTera_Iter , 117 , 2 , [7.829µs 4.31µs] , [] , 1.772137ms
+BenchmarkTeraP_Iter , 119 , 2 , [6.894µs 11.56µs] , [] , 1.790591ms
+BenchmarkTeraP_Iter , 121 , 2 , [6.976µs 10.722µs] , [] , 1.808289ms
+BenchmarkTeraP_Iter , 123 , 2 , [7.248µs 34.762µs] , [] , 1.850299ms
+BenchmarkTeraIfc_Iter , 125 , 2 , [8.71µs 12.931µs] , [] , 1.87194ms
+BenchmarkTeraIfc_Iter , 127 , 2 , [7.095µs 12.398µs] , [] , 1.891433ms

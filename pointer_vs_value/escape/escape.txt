@@ -1,0 +1,807 @@
+# command-line-arguments [command-line-arguments.test]
+pointer_vs_value/code/gc_test.go:67:3: runRoutine.func1 capturing by value: cnl (addr=false assign=false width=8)
+pointer_vs_value/code/gc_test.go:74:11: runRoutine.func2 capturing by value: ctx (addr=false assign=false width=16)
+pointer_vs_value/code/gc_test.go:77:11: runRoutine.func2 capturing by value: ch (addr=false assign=false width=8)
+pointer_vs_value/code/gc_test.go:104:3: runNative.func1 capturing by value: cnl (addr=false assign=false width=8)
+pointer_vs_value/code/func.go:7:6: can inline calcMicro as: func(micro) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:9:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:14:6: can inline calcTiny as: func(tiny) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:16:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:21:6: can inline calcMini as: func(mini) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:23:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:28:6: can inline calcMega as: func(mega) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:30:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:35:6: can inline calcTera as: func(tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:37:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:44:6: cannot inline calcIfc: function too complex: cost 198 exceeds budget 80
+pointer_vs_value/code/func.go:46:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:51:6: can inline calcMicroP as: func(*micro) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:53:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:58:6: can inline calcTinyP as: func(*tiny) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:60:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:65:6: can inline calcMiniP as: func(*mini) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:67:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:72:6: can inline calcMegaP as: func(*mega) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:74:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:79:6: can inline calcTeraP as: func(*tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/func.go:81:25: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/func.go:87:6: cannot inline calcGiga: function too complex: cost 158 exceeds budget 80
+pointer_vs_value/code/func.go:98:6: cannot inline calcGigaP: function too complex: cost 158 exceeds budget 80
+pointer_vs_value/code/func.go:109:6: cannot inline calcGigaWithInterface: function too complex: cost 3174 exceeds budget 80
+pointer_vs_value/code/model.go:13:6: can inline (*micro).GetI as: method(*micro) func() int64 { return s.a }
+pointer_vs_value/code/model.go:17:6: can inline (*micro).GetF as: method(*micro) func() float64 { return s.aa }
+pointer_vs_value/code/model.go:27:6: can inline (*tiny).GetI as: method(*tiny) func() int64 { return s.a }
+pointer_vs_value/code/model.go:31:6: can inline (*tiny).GetF as: method(*tiny) func() float64 { return s.aa }
+pointer_vs_value/code/model.go:47:6: can inline (*mini).GetI as: method(*mini) func() int64 { return s.a }
+pointer_vs_value/code/model.go:51:6: can inline (*mini).GetF as: method(*mini) func() float64 { return s.aa }
+pointer_vs_value/code/model.go:91:6: can inline (*mega).GetI as: method(*mega) func() int64 { return s.a }
+pointer_vs_value/code/model.go:95:6: can inline (*mega).GetF as: method(*mega) func() float64 { return s.aa }
+pointer_vs_value/code/model.go:235:6: can inline (*tera).GetI as: method(*tera) func() int64 { return s.a }
+pointer_vs_value/code/model.go:239:6: can inline (*tera).GetF as: method(*tera) func() float64 { return s.aa }
+pointer_vs_value/code/model.go:298:6: can inline (*giga).get_a as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:302:6: can inline (*giga).get_b as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:306:6: can inline (*giga).get_c as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:310:6: can inline (*giga).get_d as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:314:6: can inline (*giga).get_e as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:318:6: can inline (*giga).get_f as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:322:6: can inline (*giga).get_g as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:326:6: can inline (*giga).get_h as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:330:6: can inline (*giga).get_i as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:334:6: can inline (*giga).get_j as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:338:6: can inline (*giga).get_k as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:342:6: can inline (*giga).get_l as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:346:6: can inline (*giga).get_m as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:350:6: can inline (*giga).get_n as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:354:6: can inline (*giga).get_o as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:358:6: can inline (*giga).get_p as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:362:6: can inline (*giga).get_q as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:366:6: can inline (*giga).get_r as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:370:6: can inline (*giga).get_s as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:374:6: can inline (*giga).get_t as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:378:6: can inline (*giga).get_u as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:382:6: can inline (*giga).get_v as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:386:6: can inline (*giga).get_x as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:390:6: can inline (*giga).get_y as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:394:6: can inline (*giga).get_w as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:398:6: can inline (*giga).get_z as: method(*giga) func() int64 { return o.a }
+pointer_vs_value/code/model.go:403:6: can inline (*giga).get_aa as: method(*giga) func() float64 { return o.aa }
+pointer_vs_value/code/model.go:407:6: can inline (*giga).get_bb as: method(*giga) func() float64 { return o.bb }
+pointer_vs_value/code/model.go:411:6: can inline (*giga).get_cc as: method(*giga) func() float64 { return o.cc }
+pointer_vs_value/code/model.go:415:6: can inline (*giga).get_dd as: method(*giga) func() float64 { return o.dd }
+pointer_vs_value/code/model.go:419:6: can inline (*giga).get_ee as: method(*giga) func() float64 { return o.ee }
+pointer_vs_value/code/model.go:423:6: can inline (*giga).get_ff as: method(*giga) func() float64 { return o.ff }
+pointer_vs_value/code/model.go:427:6: can inline (*giga).get_gg as: method(*giga) func() float64 { return o.gg }
+pointer_vs_value/code/model.go:431:6: can inline (*giga).get_hh as: method(*giga) func() float64 { return o.hh }
+pointer_vs_value/code/model.go:435:6: can inline (*giga).get_ii as: method(*giga) func() float64 { return o.ii }
+pointer_vs_value/code/model.go:439:6: can inline (*giga).get_jj as: method(*giga) func() float64 { return o.jj }
+pointer_vs_value/code/model.go:443:6: can inline (*giga).get_kk as: method(*giga) func() float64 { return o.kk }
+pointer_vs_value/code/model.go:447:6: can inline (*giga).get_ll as: method(*giga) func() float64 { return o.ll }
+pointer_vs_value/code/model.go:451:6: can inline (*giga).get_mm as: method(*giga) func() float64 { return o.nn }
+pointer_vs_value/code/model.go:455:6: can inline (*giga).get_nn as: method(*giga) func() float64 { return o.nn }
+pointer_vs_value/code/model.go:459:6: can inline (*giga).get_oo as: method(*giga) func() float64 { return o.oo }
+pointer_vs_value/code/model.go:463:6: can inline (*giga).get_pp as: method(*giga) func() float64 { return o.pp }
+pointer_vs_value/code/model.go:467:6: can inline (*giga).get_qq as: method(*giga) func() float64 { return o.gg }
+pointer_vs_value/code/model.go:471:6: can inline (*giga).get_rr as: method(*giga) func() float64 { return o.rr }
+pointer_vs_value/code/model.go:475:6: can inline (*giga).get_ss as: method(*giga) func() float64 { return o.ss }
+pointer_vs_value/code/model.go:479:6: can inline (*giga).get_tt as: method(*giga) func() float64 { return o.tt }
+pointer_vs_value/code/model.go:483:6: can inline (*giga).get_uu as: method(*giga) func() float64 { return o.uu }
+pointer_vs_value/code/model.go:487:6: can inline (*giga).get_vv as: method(*giga) func() float64 { return o.vv }
+pointer_vs_value/code/model.go:491:6: can inline (*giga).get_xx as: method(*giga) func() float64 { return o.xx }
+pointer_vs_value/code/model.go:495:6: can inline (*giga).get_yy as: method(*giga) func() float64 { return o.yy }
+pointer_vs_value/code/model.go:499:6: can inline (*giga).get_ww as: method(*giga) func() float64 { return o.ww }
+pointer_vs_value/code/model.go:503:6: can inline (*giga).get_zz as: method(*giga) func() float64 { return o.zz }
+pointer_vs_value/code/benchmark_invocation_test.go:308:6: cannot inline createGiga: function too complex: cost 3356 exceeds budget 80
+pointer_vs_value/code/benchmark_invocation_test.go:310:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:310:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:311:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:311:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:312:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:312:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:313:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:313:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:314:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:314:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:315:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:315:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:316:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:316:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:317:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:317:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:318:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:318:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:319:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:319:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:320:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:320:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:321:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:321:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:322:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:322:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:323:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:323:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:324:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:324:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:325:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:325:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:326:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:326:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:327:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:327:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:328:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:328:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:329:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:329:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:330:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:330:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:331:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:331:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:332:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:332:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:333:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:333:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:334:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:334:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:335:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:335:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:148:6: can inline avoidCompilerOptimisation as: func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_access_test.go:5:6: cannot inline BenchmarkGigaObject_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_access_test.go:10:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_access_test.go:14:6: cannot inline BenchmarkGigaPObject_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_access_test.go:19:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_access_test.go:23:6: cannot inline BenchmarkGigaIfcObject_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_access_test.go:28:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:157:6: cannot inline createMicro: function too complex: cost 131 exceeds budget 80
+pointer_vs_value/code/benchmark_invocation_test.go:159:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:159:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:10:6: cannot inline BenchmarkMicro_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:15:38: inlining call to calcMicro func(micro) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:15:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:15:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:19:6: cannot inline BenchmarkMicroP_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:24:39: inlining call to calcMicroP func(*micro) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:24:39: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:24:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:28:6: cannot inline BenchmarkMicroIfc_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:33:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:164:6: cannot inline createTiny: function too complex: cost 256 exceeds budget 80
+pointer_vs_value/code/benchmark_invocation_test.go:166:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:166:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:168:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:37:6: cannot inline BenchmarkTiny_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:42:37: inlining call to calcTiny func(tiny) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:42:37: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:42:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:46:6: cannot inline BenchmarkTinyP_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:51:38: inlining call to calcTinyP func(*tiny) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:51:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:51:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:55:6: cannot inline BenchmarkTinyIfc_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:60:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:172:6: cannot inline createMini: function too complex: cost 764 exceeds budget 80
+pointer_vs_value/code/benchmark_invocation_test.go:174:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:174:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:175:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:175:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:176:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:176:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:180:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:181:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:182:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:64:6: cannot inline BenchmarkMini_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:69:37: inlining call to calcMini func(mini) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:69:37: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:69:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:73:6: cannot inline BenchmarkMiniP_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:78:38: inlining call to calcMiniP func(*mini) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:78:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:78:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:82:6: cannot inline BenchmarkMiniIfc_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:87:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:186:6: cannot inline createMega: function too complex: cost 2796 exceeds budget 80
+pointer_vs_value/code/benchmark_invocation_test.go:188:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:188:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:189:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:189:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:190:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:190:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:191:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:191:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:192:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:192:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:193:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:193:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:194:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:194:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:195:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:195:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:196:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:196:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:197:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:197:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:198:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:198:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:210:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:211:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:212:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:213:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:214:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:215:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:216:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:217:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:218:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:219:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:220:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:91:6: cannot inline BenchmarkMega_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:96:37: inlining call to calcMega func(mega) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:96:37: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:96:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:100:6: cannot inline BenchmarkMegaP_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:105:38: inlining call to calcMegaP func(*mega) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:105:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:105:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:109:6: cannot inline BenchmarkMegaIfc_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:114:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:224:6: cannot inline createTera: function too complex: cost 6606 exceeds budget 80
+pointer_vs_value/code/benchmark_invocation_test.go:226:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:226:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:227:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:227:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:228:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:228:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:229:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:229:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:230:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:230:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:231:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:231:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:232:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:232:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:233:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:233:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:234:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:234:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:235:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:235:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:236:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:236:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:237:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:237:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:238:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:238:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:239:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:239:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:240:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:240:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:241:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:241:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:242:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:242:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:243:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:243:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:244:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:244:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:245:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:245:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:246:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:246:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:247:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:247:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:248:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:248:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:249:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:249:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:250:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:250:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:251:18: inlining call to rand.Int63 func() int64 { return rand.globalRand.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:251:18: inlining call to rand.(*Rand).Int63 method(*rand.Rand) func() int64 { return rand.r.src.Int63() }
+pointer_vs_value/code/benchmark_invocation_test.go:278:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:279:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:280:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:281:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:282:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:283:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:284:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:285:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:286:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:287:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:288:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:289:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:290:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:291:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:292:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:293:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:294:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:295:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:296:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:297:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:298:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:299:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:300:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:301:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:302:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:303:20: inlining call to strconv.Itoa func(int) string { return strconv.FormatInt(int64(strconv.i), int(10)) }
+pointer_vs_value/code/benchmark_invocation_test.go:118:6: cannot inline BenchmarkTera_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:123:37: inlining call to calcTera func(tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:123:37: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:123:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:127:6: cannot inline BenchmarkTeraP_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:132:38: inlining call to calcTeraP func(*tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_invocation_test.go:132:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_invocation_test.go:132:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_invocation_test.go:136:6: cannot inline BenchmarkTeraIfc_Calc: unhandled op FOR
+pointer_vs_value/code/benchmark_invocation_test.go:141:28: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:9:6: cannot inline BenchmarkMicro_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:15:39: inlining call to calcMicro func(micro) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:15:39: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:15:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:21:6: cannot inline BenchmarkMicroP_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:27:40: inlining call to calcMicroP func(*micro) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:27:40: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:27:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:33:6: cannot inline BenchmarkMicroIfc_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:39:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:45:6: cannot inline BenchmarkTiny_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:51:38: inlining call to calcTiny func(tiny) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:51:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:51:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:57:6: cannot inline BenchmarkTinyP_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:63:39: inlining call to calcTinyP func(*tiny) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:63:39: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:63:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:69:6: cannot inline BenchmarkTinyIfc_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:75:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:81:6: cannot inline BenchmarkMini_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:87:38: inlining call to calcMini func(mini) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:87:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:87:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:93:6: cannot inline BenchmarkMiniP_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:99:39: inlining call to calcMiniP func(*mini) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:99:39: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:99:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:105:6: cannot inline BenchmarkMiniIfc_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:111:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:117:6: cannot inline BenchmarkMega_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:123:38: inlining call to calcMega func(mega) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:123:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:123:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:129:6: cannot inline BenchmarkMegaP_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:135:39: inlining call to calcMegaP func(*mega) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:135:39: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:135:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:141:6: cannot inline BenchmarkMegaIfc_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:147:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:153:6: cannot inline BenchmarkTera_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:159:38: inlining call to calcTera func(tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:159:38: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:159:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:165:6: cannot inline BenchmarkTeraP_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:171:39: inlining call to calcTeraP func(*tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/benchmark_iter_test.go:171:39: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/benchmark_iter_test.go:171:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/benchmark_iter_test.go:177:6: cannot inline BenchmarkTeraIfc_Iter: unhandled op FOR
+pointer_vs_value/code/benchmark_iter_test.go:183:29: inlining call to avoidCompilerOptimisation func(float64, error) { if err != nil { log.Fatal("Error") }; F += f }
+pointer_vs_value/code/gc_test.go:137:6: cannot inline sum: unhandled op RANGE
+pointer_vs_value/code/gc_test.go:140:22: inlining call to time.Duration.Microseconds method(time.Duration) func() int64 { return int64(time.d) / int64(1000) }
+pointer_vs_value/code/gc_test.go:128:6: cannot inline trackGC: function too complex: cost 318 exceeds budget 80
+pointer_vs_value/code/gc_test.go:60:6: cannot inline runRoutine: unhandled op GO
+pointer_vs_value/code/gc_test.go:63:51: inlining call to context.Background func() context.Context { return context.Context(context.background) }
+pointer_vs_value/code/gc_test.go:65:5: cannot inline runRoutine.func1: function too complex: cost 125 exceeds budget 80
+pointer_vs_value/code/gc_test.go:66:15: inlining call to time.After func(time.Duration) <-chan time.Time { return time.NewTimer(time.d).C }
+pointer_vs_value/code/gc_test.go:70:5: cannot inline runRoutine.func2: unhandled op FOR
+pointer_vs_value/code/gc_test.go:75:51: inlining call to time.Duration.Milliseconds method(time.Duration) func() int64 { return int64(time.d) / int64(1000000) }
+pointer_vs_value/code/gc_test.go:76:27: inlining call to fmt.Printf func(string, ...interface {}) (int, error) { var fmt..autotmp_4 int; fmt..autotmp_4 = <N>; var fmt..autotmp_5 error; fmt..autotmp_5 = <N>; fmt..autotmp_4, fmt..autotmp_5 = fmt.Fprintf(io.Writer(os.Stdout), fmt.format, fmt.a...); return fmt..autotmp_4, fmt..autotmp_5 }
+pointer_vs_value/code/gc_test.go:76:16: inlining call to fmt.Println func(...interface {}) (int, error) { var fmt..autotmp_3 int; fmt..autotmp_3 = <N>; var fmt..autotmp_4 error; fmt..autotmp_4 = <N>; fmt..autotmp_3, fmt..autotmp_4 = fmt.Fprintln(io.Writer(os.Stdout), fmt.a...); return fmt..autotmp_3, fmt..autotmp_4 }
+pointer_vs_value/code/gc_test.go:15:6: cannot inline TestTeraValueReceiverRoutine: unhandled op CLOSURE
+pointer_vs_value/code/gc_test.go:17:13: can inline TestTeraValueReceiverRoutine.func1 as: func(tera) { calcTera(o) }
+pointer_vs_value/code/gc_test.go:18:11: inlining call to calcTera func(tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/gc_test.go:18:11: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/gc_test.go:22:6: cannot inline TestTeraPointerReceiverRoutine: unhandled op CLOSURE
+pointer_vs_value/code/gc_test.go:24:13: can inline TestTeraPointerReceiverRoutine.func1 as: func(tera) { calcTeraP(&o) }
+pointer_vs_value/code/gc_test.go:25:12: inlining call to calcTeraP func(*tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/gc_test.go:25:12: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/gc_test.go:30:6: cannot inline TestTeraInterfaceReceiverRoutine: unhandled op CLOSURE
+pointer_vs_value/code/gc_test.go:32:13: can inline TestTeraInterfaceReceiverRoutine.func1 as: func(tera) { calcIfc(&o) }
+pointer_vs_value/code/gc_test.go:98:6: cannot inline runNative: unhandled op GO
+pointer_vs_value/code/gc_test.go:100:51: inlining call to context.Background func() context.Context { return context.Context(context.background) }
+pointer_vs_value/code/gc_test.go:113:50: inlining call to time.Duration.Milliseconds method(time.Duration) func() int64 { return int64(time.d) / int64(1000000) }
+pointer_vs_value/code/gc_test.go:114:26: inlining call to fmt.Printf func(string, ...interface {}) (int, error) { var fmt..autotmp_4 int; fmt..autotmp_4 = <N>; var fmt..autotmp_5 error; fmt..autotmp_5 = <N>; fmt..autotmp_4, fmt..autotmp_5 = fmt.Fprintf(io.Writer(os.Stdout), fmt.format, fmt.a...); return fmt..autotmp_4, fmt..autotmp_5 }
+pointer_vs_value/code/gc_test.go:114:15: inlining call to fmt.Println func(...interface {}) (int, error) { var fmt..autotmp_3 int; fmt..autotmp_3 = <N>; var fmt..autotmp_4 error; fmt..autotmp_4 = <N>; fmt..autotmp_3, fmt..autotmp_4 = fmt.Fprintln(io.Writer(os.Stdout), fmt.a...); return fmt..autotmp_3, fmt..autotmp_4 }
+pointer_vs_value/code/gc_test.go:102:5: cannot inline runNative.func1: function too complex: cost 125 exceeds budget 80
+pointer_vs_value/code/gc_test.go:103:15: inlining call to time.After func(time.Duration) <-chan time.Time { return time.NewTimer(time.d).C }
+pointer_vs_value/code/gc_test.go:38:6: cannot inline TestTeraValueReceiverNative: unhandled op CLOSURE
+pointer_vs_value/code/gc_test.go:40:12: can inline TestTeraValueReceiverNative.func1 as: func(tera) { calcTera(o) }
+pointer_vs_value/code/gc_test.go:41:11: inlining call to calcTera func(tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/gc_test.go:41:11: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/gc_test.go:45:6: cannot inline TestTeraPointerReceiverNative: unhandled op CLOSURE
+pointer_vs_value/code/gc_test.go:47:12: can inline TestTeraPointerReceiverNative.func1 as: func(tera) { calcTeraP(&o) }
+pointer_vs_value/code/gc_test.go:48:12: inlining call to calcTeraP func(*tera) (float64, error) { if o.aa == 0 { return 0, errors.New("cannot divide by '0.0'") }; return float64(o.a) / o.aa, nil }
+pointer_vs_value/code/gc_test.go:48:12: inlining call to errors.New func(string) error { return error(&errors.errorString literal) }
+pointer_vs_value/code/gc_test.go:52:6: cannot inline TestTeraInterfaceReceiverNative: unhandled op CLOSURE
+pointer_vs_value/code/gc_test.go:54:12: can inline TestTeraInterfaceReceiverNative.func1 as: func(tera) { calcIfc(&o) }
+pointer_vs_value/code/func.go:9:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:9:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:14:15: calcTiny o does not escape
+pointer_vs_value/code/func.go:16:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:16:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:21:15: calcMini o does not escape
+pointer_vs_value/code/func.go:23:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:23:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:28:15: calcMega o does not escape
+pointer_vs_value/code/func.go:30:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:30:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:35:15: calcTera o does not escape
+pointer_vs_value/code/func.go:37:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:37:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:44:14: leaking param: o
+pointer_vs_value/code/func.go:46:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:46:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:51:17: calcMicroP o does not escape
+pointer_vs_value/code/func.go:53:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:53:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:58:16: calcTinyP o does not escape
+pointer_vs_value/code/func.go:60:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:60:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:65:16: calcMiniP o does not escape
+pointer_vs_value/code/func.go:67:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:67:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:72:16: calcMegaP o does not escape
+pointer_vs_value/code/func.go:74:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:74:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:79:16: calcTeraP o does not escape
+pointer_vs_value/code/func.go:81:25: error(&errors.errorString literal) escapes to heap
+pointer_vs_value/code/func.go:81:25: &errors.errorString literal escapes to heap
+pointer_vs_value/code/func.go:98:16: calcGigaP o does not escape
+pointer_vs_value/code/func.go:109:28: leaking param: o
+pointer_vs_value/code/model.go:13:7: (*micro).GetI s does not escape
+pointer_vs_value/code/model.go:17:7: (*micro).GetF s does not escape
+pointer_vs_value/code/model.go:27:7: (*tiny).GetI s does not escape
+pointer_vs_value/code/model.go:31:7: (*tiny).GetF s does not escape
+pointer_vs_value/code/model.go:47:7: (*mini).GetI s does not escape
+pointer_vs_value/code/model.go:51:7: (*mini).GetF s does not escape
+pointer_vs_value/code/model.go:91:7: (*mega).GetI s does not escape
+pointer_vs_value/code/model.go:95:7: (*mega).GetF s does not escape
+pointer_vs_value/code/model.go:235:7: (*tera).GetI s does not escape
+pointer_vs_value/code/model.go:239:7: (*tera).GetF s does not escape
+pointer_vs_value/code/model.go:298:7: (*giga).get_a o does not escape
+pointer_vs_value/code/model.go:302:7: (*giga).get_b o does not escape
+pointer_vs_value/code/model.go:306:7: (*giga).get_c o does not escape
+pointer_vs_value/code/model.go:310:7: (*giga).get_d o does not escape
+pointer_vs_value/code/model.go:314:7: (*giga).get_e o does not escape
+pointer_vs_value/code/model.go:318:7: (*giga).get_f o does not escape
+pointer_vs_value/code/model.go:322:7: (*giga).get_g o does not escape
+pointer_vs_value/code/model.go:326:7: (*giga).get_h o does not escape
+pointer_vs_value/code/model.go:330:7: (*giga).get_i o does not escape
+pointer_vs_value/code/model.go:334:7: (*giga).get_j o does not escape
+pointer_vs_value/code/model.go:338:7: (*giga).get_k o does not escape
+pointer_vs_value/code/model.go:342:7: (*giga).get_l o does not escape
+pointer_vs_value/code/model.go:346:7: (*giga).get_m o does not escape
+pointer_vs_value/code/model.go:350:7: (*giga).get_n o does not escape
+pointer_vs_value/code/model.go:354:7: (*giga).get_o o does not escape
+pointer_vs_value/code/model.go:358:7: (*giga).get_p o does not escape
+pointer_vs_value/code/model.go:362:7: (*giga).get_q o does not escape
+pointer_vs_value/code/model.go:366:7: (*giga).get_r o does not escape
+pointer_vs_value/code/model.go:370:7: (*giga).get_s o does not escape
+pointer_vs_value/code/model.go:374:7: (*giga).get_t o does not escape
+pointer_vs_value/code/model.go:378:7: (*giga).get_u o does not escape
+pointer_vs_value/code/model.go:382:7: (*giga).get_v o does not escape
+pointer_vs_value/code/model.go:386:7: (*giga).get_x o does not escape
+pointer_vs_value/code/model.go:390:7: (*giga).get_y o does not escape
+pointer_vs_value/code/model.go:394:7: (*giga).get_w o does not escape
+pointer_vs_value/code/model.go:398:7: (*giga).get_z o does not escape
+pointer_vs_value/code/model.go:403:7: (*giga).get_aa o does not escape
+pointer_vs_value/code/model.go:407:7: (*giga).get_bb o does not escape
+pointer_vs_value/code/model.go:411:7: (*giga).get_cc o does not escape
+pointer_vs_value/code/model.go:415:7: (*giga).get_dd o does not escape
+pointer_vs_value/code/model.go:419:7: (*giga).get_ee o does not escape
+pointer_vs_value/code/model.go:423:7: (*giga).get_ff o does not escape
+pointer_vs_value/code/model.go:427:7: (*giga).get_gg o does not escape
+pointer_vs_value/code/model.go:431:7: (*giga).get_hh o does not escape
+pointer_vs_value/code/model.go:435:7: (*giga).get_ii o does not escape
+pointer_vs_value/code/model.go:439:7: (*giga).get_jj o does not escape
+pointer_vs_value/code/model.go:443:7: (*giga).get_kk o does not escape
+pointer_vs_value/code/model.go:447:7: (*giga).get_ll o does not escape
+pointer_vs_value/code/model.go:451:7: (*giga).get_mm o does not escape
+pointer_vs_value/code/model.go:455:7: (*giga).get_nn o does not escape
+pointer_vs_value/code/model.go:459:7: (*giga).get_oo o does not escape
+pointer_vs_value/code/model.go:463:7: (*giga).get_pp o does not escape
+pointer_vs_value/code/model.go:467:7: (*giga).get_qq o does not escape
+pointer_vs_value/code/model.go:471:7: (*giga).get_rr o does not escape
+pointer_vs_value/code/model.go:475:7: (*giga).get_ss o does not escape
+pointer_vs_value/code/model.go:479:7: (*giga).get_tt o does not escape
+pointer_vs_value/code/model.go:483:7: (*giga).get_uu o does not escape
+pointer_vs_value/code/model.go:487:7: (*giga).get_vv o does not escape
+pointer_vs_value/code/model.go:491:7: (*giga).get_xx o does not escape
+pointer_vs_value/code/model.go:495:7: (*giga).get_yy o does not escape
+pointer_vs_value/code/model.go:499:7: (*giga).get_ww o does not escape
+pointer_vs_value/code/model.go:503:7: (*giga).get_zz o does not escape
+pointer_vs_value/code/benchmark_access_test.go:5:31: BenchmarkGigaObject_Calc b does not escape
+pointer_vs_value/code/benchmark_access_test.go:10:28: BenchmarkGigaObject_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_access_test.go:10:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_access_test.go:14:32: BenchmarkGigaPObject_Calc b does not escape
+pointer_vs_value/code/benchmark_access_test.go:19:28: BenchmarkGigaPObject_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_access_test.go:19:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_access_test.go:23:34: BenchmarkGigaIfcObject_Calc b does not escape
+pointer_vs_value/code/benchmark_access_test.go:25:2: moved to heap: o
+pointer_vs_value/code/benchmark_access_test.go:28:51: &o escapes to heap
+pointer_vs_value/code/benchmark_access_test.go:28:28: BenchmarkGigaIfcObject_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_access_test.go:28:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:10:26: BenchmarkMicro_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:15:38: BenchmarkMicro_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:15:38: BenchmarkMicro_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:15:28: BenchmarkMicro_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:15:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:19:27: BenchmarkMicroP_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:24:39: BenchmarkMicroP_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:24:39: BenchmarkMicroP_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:24:28: BenchmarkMicroP_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:24:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:28:29: BenchmarkMicroIfc_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:30:2: moved to heap: o
+pointer_vs_value/code/benchmark_invocation_test.go:33:37: &o escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:33:28: BenchmarkMicroIfc_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:33:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:37:25: BenchmarkTiny_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:42:37: BenchmarkTiny_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:42:37: BenchmarkTiny_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:42:28: BenchmarkTiny_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:42:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:46:26: BenchmarkTinyP_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:51:38: BenchmarkTinyP_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:51:38: BenchmarkTinyP_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:51:28: BenchmarkTinyP_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:51:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:55:28: BenchmarkTinyIfc_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:57:2: moved to heap: o
+pointer_vs_value/code/benchmark_invocation_test.go:60:37: &o escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:60:28: BenchmarkTinyIfc_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:60:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:64:25: BenchmarkMini_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:69:37: BenchmarkMini_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:69:37: BenchmarkMini_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:69:28: BenchmarkMini_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:69:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:73:26: BenchmarkMiniP_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:78:38: BenchmarkMiniP_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:78:38: BenchmarkMiniP_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:78:28: BenchmarkMiniP_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:78:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:82:28: BenchmarkMiniIfc_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:84:2: moved to heap: o
+pointer_vs_value/code/benchmark_invocation_test.go:87:37: &o escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:87:28: BenchmarkMiniIfc_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:87:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:91:25: BenchmarkMega_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:96:37: BenchmarkMega_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:96:37: BenchmarkMega_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:96:28: BenchmarkMega_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:96:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:100:26: BenchmarkMegaP_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:105:38: BenchmarkMegaP_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:105:38: BenchmarkMegaP_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:105:28: BenchmarkMegaP_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:105:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:109:28: BenchmarkMegaIfc_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:111:2: moved to heap: o
+pointer_vs_value/code/benchmark_invocation_test.go:114:37: &o escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:114:28: BenchmarkMegaIfc_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:114:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:118:25: BenchmarkTera_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:123:37: BenchmarkTera_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:123:37: BenchmarkTera_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:123:28: BenchmarkTera_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:123:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:127:26: BenchmarkTeraP_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:132:38: BenchmarkTeraP_Calc error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:132:38: BenchmarkTeraP_Calc &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:132:28: BenchmarkTeraP_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:132:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:136:28: BenchmarkTeraIfc_Calc b does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:138:2: moved to heap: o
+pointer_vs_value/code/benchmark_invocation_test.go:141:37: &o escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:141:28: BenchmarkTeraIfc_Calc ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:141:28: "Error" escapes to heap
+pointer_vs_value/code/benchmark_invocation_test.go:148:43: avoidCompilerOptimisation err does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:150:12: avoidCompilerOptimisation ... argument does not escape
+pointer_vs_value/code/benchmark_invocation_test.go:150:13: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:9:26: BenchmarkMicro_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:15:39: BenchmarkMicro_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:15:39: BenchmarkMicro_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:15:29: BenchmarkMicro_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:15:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:21:27: BenchmarkMicroP_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:27:40: BenchmarkMicroP_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:27:40: BenchmarkMicroP_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:27:29: BenchmarkMicroP_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:27:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:33:29: BenchmarkMicroIfc_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:35:2: moved to heap: o
+pointer_vs_value/code/benchmark_iter_test.go:39:38: &o escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:39:29: BenchmarkMicroIfc_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:39:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:45:25: BenchmarkTiny_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:51:38: BenchmarkTiny_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:51:38: BenchmarkTiny_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:51:29: BenchmarkTiny_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:51:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:57:26: BenchmarkTinyP_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:63:39: BenchmarkTinyP_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:63:39: BenchmarkTinyP_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:63:29: BenchmarkTinyP_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:63:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:69:28: BenchmarkTinyIfc_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:71:2: moved to heap: o
+pointer_vs_value/code/benchmark_iter_test.go:75:38: &o escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:75:29: BenchmarkTinyIfc_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:75:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:81:25: BenchmarkMini_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:87:38: BenchmarkMini_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:87:38: BenchmarkMini_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:87:29: BenchmarkMini_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:87:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:93:26: BenchmarkMiniP_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:99:39: BenchmarkMiniP_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:99:39: BenchmarkMiniP_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:99:29: BenchmarkMiniP_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:99:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:105:28: BenchmarkMiniIfc_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:107:2: moved to heap: o
+pointer_vs_value/code/benchmark_iter_test.go:111:38: &o escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:111:29: BenchmarkMiniIfc_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:111:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:117:25: BenchmarkMega_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:123:38: BenchmarkMega_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:123:38: BenchmarkMega_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:123:29: BenchmarkMega_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:123:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:129:26: BenchmarkMegaP_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:135:39: BenchmarkMegaP_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:135:39: BenchmarkMegaP_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:135:29: BenchmarkMegaP_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:135:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:141:28: BenchmarkMegaIfc_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:143:2: moved to heap: o
+pointer_vs_value/code/benchmark_iter_test.go:147:38: &o escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:147:29: BenchmarkMegaIfc_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:147:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:153:25: BenchmarkTera_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:159:38: BenchmarkTera_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:159:38: BenchmarkTera_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:159:29: BenchmarkTera_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:159:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:165:26: BenchmarkTeraP_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:171:39: BenchmarkTeraP_Iter error(&errors.errorString literal) does not escape
+pointer_vs_value/code/benchmark_iter_test.go:171:39: BenchmarkTeraP_Iter &errors.errorString literal does not escape
+pointer_vs_value/code/benchmark_iter_test.go:171:29: BenchmarkTeraP_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:171:29: "Error" escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:177:28: BenchmarkTeraIfc_Iter b does not escape
+pointer_vs_value/code/benchmark_iter_test.go:179:2: moved to heap: o
+pointer_vs_value/code/benchmark_iter_test.go:183:38: &o escapes to heap
+pointer_vs_value/code/benchmark_iter_test.go:183:29: BenchmarkTeraIfc_Iter ... argument does not escape
+pointer_vs_value/code/benchmark_iter_test.go:183:29: "Error" escapes to heap
+pointer_vs_value/code/gc_test.go:137:11: sum durations does not escape
+pointer_vs_value/code/gc_test.go:128:14: leaking param: caller
+pointer_vs_value/code/gc_test.go:131:2: moved to heap: stats
+pointer_vs_value/code/gc_test.go:133:21: trackGC ... argument does not escape
+pointer_vs_value/code/gc_test.go:133:22: caller escapes to heap
+pointer_vs_value/code/gc_test.go:133:65: stats.NumGC escapes to heap
+pointer_vs_value/code/gc_test.go:133:76: sum(stats.Pause) escapes to heap
+pointer_vs_value/code/gc_test.go:133:96: stats.PauseQuantiles escapes to heap
+pointer_vs_value/code/gc_test.go:133:118: stats.PauseTotal escapes to heap
+pointer_vs_value/code/gc_test.go:60:17: runRoutine exec does not escape
+pointer_vs_value/code/gc_test.go:60:35: leaking param: name
+pointer_vs_value/code/gc_test.go:63:51: context.Context(context.background) escapes to heap
+pointer_vs_value/code/gc_test.go:65:5: func literal escapes to heap
+pointer_vs_value/code/gc_test.go:70:5: func literal escapes to heap
+pointer_vs_value/code/gc_test.go:92:21: runRoutine ... argument does not escape
+pointer_vs_value/code/gc_test.go:92:22: i escapes to heap
+pointer_vs_value/code/gc_test.go:76:28: duration escapes to heap
+pointer_vs_value/code/gc_test.go:76:27: runRoutine.func2 []interface {} literal does not escape
+pointer_vs_value/code/gc_test.go:76:27: io.Writer(os.Stdout) escapes to heap
+pointer_vs_value/code/gc_test.go:76:16: .autotmp_2 escapes to heap
+pointer_vs_value/code/gc_test.go:76:16: .autotmp_3 escapes to heap
+pointer_vs_value/code/gc_test.go:76:16: runRoutine.func2 []interface {} literal does not escape
+pointer_vs_value/code/gc_test.go:76:16: io.Writer(os.Stdout) escapes to heap
+pointer_vs_value/code/gc_test.go:15:35: TestTeraValueReceiverRoutine t does not escape
+pointer_vs_value/code/gc_test.go:17:18: TestTeraValueReceiverRoutine.func1 o does not escape
+pointer_vs_value/code/gc_test.go:17:13: TestTeraValueReceiverRoutine func literal does not escape
+pointer_vs_value/code/gc_test.go:18:11: TestTeraValueReceiverRoutine.func1 error(&errors.errorString literal) does not escape
+pointer_vs_value/code/gc_test.go:18:11: TestTeraValueReceiverRoutine.func1 &errors.errorString literal does not escape
+pointer_vs_value/code/gc_test.go:22:37: TestTeraPointerReceiverRoutine t does not escape
+pointer_vs_value/code/gc_test.go:24:18: TestTeraPointerReceiverRoutine.func1 o does not escape
+pointer_vs_value/code/gc_test.go:24:13: TestTeraPointerReceiverRoutine func literal does not escape
+pointer_vs_value/code/gc_test.go:25:12: TestTeraPointerReceiverRoutine.func1 error(&errors.errorString literal) does not escape
+pointer_vs_value/code/gc_test.go:25:12: TestTeraPointerReceiverRoutine.func1 &errors.errorString literal does not escape
+pointer_vs_value/code/gc_test.go:30:39: TestTeraInterfaceReceiverRoutine t does not escape
+pointer_vs_value/code/gc_test.go:32:18: moved to heap: o
+pointer_vs_value/code/gc_test.go:32:13: TestTeraInterfaceReceiverRoutine func literal does not escape
+pointer_vs_value/code/gc_test.go:33:11: &o escapes to heap
+pointer_vs_value/code/gc_test.go:98:16: runNative exec does not escape
+pointer_vs_value/code/gc_test.go:98:34: leaking param: name
+pointer_vs_value/code/gc_test.go:100:51: context.Context(context.background) escapes to heap
+pointer_vs_value/code/gc_test.go:102:5: func literal escapes to heap
+pointer_vs_value/code/gc_test.go:114:27: duration escapes to heap
+pointer_vs_value/code/gc_test.go:114:26: runNative []interface {} literal does not escape
+pointer_vs_value/code/gc_test.go:114:26: io.Writer(os.Stdout) escapes to heap
+pointer_vs_value/code/gc_test.go:114:15: .autotmp_9 escapes to heap
+pointer_vs_value/code/gc_test.go:114:15: .autotmp_10 escapes to heap
+pointer_vs_value/code/gc_test.go:114:15: runNative []interface {} literal does not escape
+pointer_vs_value/code/gc_test.go:114:15: io.Writer(os.Stdout) escapes to heap
+pointer_vs_value/code/gc_test.go:115:23: runNative ... argument does not escape
+pointer_vs_value/code/gc_test.go:115:24: i escapes to heap
+pointer_vs_value/code/gc_test.go:38:34: TestTeraValueReceiverNative t does not escape
+pointer_vs_value/code/gc_test.go:40:17: TestTeraValueReceiverNative.func1 o does not escape
+pointer_vs_value/code/gc_test.go:40:12: TestTeraValueReceiverNative func literal does not escape
+pointer_vs_value/code/gc_test.go:41:11: TestTeraValueReceiverNative.func1 error(&errors.errorString literal) does not escape
+pointer_vs_value/code/gc_test.go:41:11: TestTeraValueReceiverNative.func1 &errors.errorString literal does not escape
+pointer_vs_value/code/gc_test.go:45:36: TestTeraPointerReceiverNative t does not escape
+pointer_vs_value/code/gc_test.go:47:17: TestTeraPointerReceiverNative.func1 o does not escape
+pointer_vs_value/code/gc_test.go:47:12: TestTeraPointerReceiverNative func literal does not escape
+pointer_vs_value/code/gc_test.go:48:12: TestTeraPointerReceiverNative.func1 error(&errors.errorString literal) does not escape
+pointer_vs_value/code/gc_test.go:48:12: TestTeraPointerReceiverNative.func1 &errors.errorString literal does not escape
+pointer_vs_value/code/gc_test.go:52:38: TestTeraInterfaceReceiverNative t does not escape
+pointer_vs_value/code/gc_test.go:54:17: moved to heap: o
+pointer_vs_value/code/gc_test.go:54:12: TestTeraInterfaceReceiverNative func literal does not escape
+pointer_vs_value/code/gc_test.go:55:11: &o escapes to heap
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: leaking param: .this
+<autogenerated>:1: (*File).close .this does not escape
+# command-line-arguments.test
+/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/go-build249758979/b001/_testmain.go:110:6: can inline init.0 as: func() { testdeps.ImportPath = "" }
+/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/go-build249758979/b001/_testmain.go:116:6: cannot inline main: function too complex: cost 200 exceeds budget 80
+/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/go-build249758979/b001/_testmain.go:118:24: inlining call to testing.MainStart func(testing.testDeps, []testing.InternalTest, []testing.InternalBenchmark, []testing.InternalExample) *testing.M { testing.Init(); return &testing.M literal }
+/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/go-build249758979/b001/_testmain.go:118:42: testdeps.TestDeps literal escapes to heap
+/var/folders/f1/w8ll0_cj1bl_prh_f928f0zr0000gp/T/go-build249758979/b001/_testmain.go:118:24: &testing.M literal escapes to heap
+ok  	command-line-arguments	0.005s [no tests to run]

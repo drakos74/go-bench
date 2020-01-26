@@ -1,0 +1,43 @@
+➜  go-bench go test ./... -run=XXX -gcflags=-N -bench=. -benchmem
+?       go-bench/cmd    [no test files]
+?       go-bench/dgraph [no test files]
+goos: darwin
+goarch: amd64
+pkg: go-bench/pointer_vs_value/pointer_receiver
+BenchmarkBig_Calc-16              176015136                6.38 ns/op            0 B/op          0 allocs/op
+BenchmarkBigP_Calc-16             231691747                4.99 ns/op            0 B/op          0 allocs/op
+BenchmarkBigIfc_Calc-16           100000000               11.3 ns/op             0 B/op          0 allocs/op
+BenchmarkCompBig_Calc-16          130434984                9.08 ns/op            2 B/op          0 allocs/op
+BenchmarkCompBigP_Calc-16         165228728                6.71 ns/op            1 B/op          0 allocs/op
+BenchmarkCompBigIfc_Calc-16       69526424                15.3 ns/op             3 B/op          0 allocs/op
+Benchmark_Calc-16                 245080616                4.87 ns/op            0 B/op          0 allocs/op
+BenchmarkP_Calc-16                238634443                5.04 ns/op            0 B/op          0 allocs/op
+BenchmarkIfc_Calc-16              94852939                11.9 ns/op             0 B/op          0 allocs/op
+BenchmarkComp_Calc-16             140334304                8.77 ns/op            1 B/op          0 allocs/op
+BenchmarkCompP_Calc-16            166891016                6.61 ns/op            1 B/op          0 allocs/op
+BenchmarkCompIfc_Calc-16          71188701                15.1 ns/op             3 B/op          0 allocs/op
+BenchmarkSmall_Calc-16            239816956                4.94 ns/op            0 B/op          0 allocs/op
+BenchmarkSmallP_Calc-16           216644389                5.66 ns/op            0 B/op          0 allocs/op
+BenchmarkSmallIfc_Calc-16         99267709                11.8 ns/op             0 B/op          0 allocs/op
+BenchmarkCompSmall_Calc-16        171050900                6.83 ns/op            0 B/op          0 allocs/op
+BenchmarkCompSmallP_Calc-16       234619106                5.43 ns/op            0 B/op          0 allocs/op
+BenchmarkCompSmallIfc_Calc-16     100000000               11.8 ns/op             0 B/op          0 allocs/op
+BenchmarkMicro_Calc-16            246302917                4.51 ns/op            0 B/op          0 allocs/op
+BenchmarkMicroP_Calc-16           230883720                6.84 ns/op            0 B/op          0 allocs/op
+BenchmarkMicroIfc_Calc-16         100000000               12.5 ns/op             0 B/op          0 allocs/op
+BenchmarkTiny_Calc-16             237712701                4.97 ns/op            0 B/op          0 allocs/op
+BenchmarkTinyP_Calc-16            236528001                5.04 ns/op            0 B/op          0 allocs/op
+BenchmarkTinyIfc_Calc-16          100000000               11.3 ns/op             0 B/op          0 allocs/op
+BenchmarkMini_Calc-16             179700812                6.68 ns/op            0 B/op          0 allocs/op
+BenchmarkMiniP_Calc-16            230234967                5.06 ns/op            0 B/op          0 allocs/op
+BenchmarkMiniIfc_Calc-16          100000000               12.7 ns/op             0 B/op          0 allocs/op
+BenchmarkMega_Calc-16             123422346                9.62 ns/op            0 B/op          0 allocs/op
+BenchmarkMegaP_Calc-16            240629721                5.07 ns/op            0 B/op          0 allocs/op
+BenchmarkMegaIfc_Calc-16          100000000               11.7 ns/op             0 B/op          0 allocs/op
+BenchmarkTera_Calc-16             65807317                17.1 ns/op             0 B/op          0 allocs/op
+BenchmarkTeraP_Calc-16            228567706                5.14 ns/op            0 B/op          0 allocs/op
+BenchmarkTeraIfc_Calc-16          89343343                13.6 ns/op             0 B/op          0 allocs/op
+PASS
+ok      go-bench/pointer_vs_value/pointer_receiver      84.382s
+PASS
+ok      go-bench/use    0.010s
